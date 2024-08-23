@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="./image/bookmark-solid.svg" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <title>Bookmark</title>
+</head>
+<body>
+<div class="container py-5">
+    <div class="head position-relative  m-auto  ">
+        <h1 class="text-center">Bookmarker</h1>
+        <div class="backcolor"></div>
+    </div>
+
+    <h2 class="text-center mb-4">
+        <i class="fa-solid fa-bookmark"></i>
+        Bookmark your favorite sites
+        <i class="fa-solid fa-bookmark"></i>
+    </h2>
+    <label for="siteName" class="labl">
+        <i class="fa-solid fa-book-bookmark"></i>
+        Site Name
+    </label>
+    <input type="text"  class="form-control mb-4" id="siteName" placeholder="Bookmark Name">
+
+    <label for="siteURL" class="labl">
+        <i class="fa-solid fa-link"></i>
+        Site URL
+    </label>
+    <input type="text"  class="form-control" id="siteURL" placeholder="Website URL" onblur="URLvalidation()">
+    <p class="pt-3 text-danger text-center d-none" id="notTrue">URL is not true</p>
+    <p class="pt-3 text-danger text-center d-none " id="mustCreat">you must creat site</p>
+    <div class="d-flex justify-content-center mb-1">
+        <button onclick="addSite()" class="btn mt-4 submit ">Submit</button>
+    </div>
+    
+    
+    <table class="table text-center mt-5 ">
+        <thead>
+          <tr>
+            <th scope="col">Index</th>
+            <th scope="col">Website Name</th>
+            <th scope="col">Visit</th>
+            <th scope="col">Delete</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody">
+          
+        </tbody>
+      </table>
+</div>    
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

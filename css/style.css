@@ -1,0 +1,57 @@
+body{
+    background-color: #F7ECDE;
+}
+h1{
+    color: #352E28;
+    font-size:50px ;
+    font-family: 'Pacifico', cursive;
+    line-height: 60px;
+    font-weight: 500;
+    padding-top: 8px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+
+h2{
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size:25px;
+    line-height: 30px;
+    font-weight: 500px;
+    font-family: 'Righteous', sans-serif;
+    padding-top: 10px;
+}
+.labl{
+    color:#212529;
+    font-size:16px ;
+    font-weight:700 ;
+    line-height: 24px;
+    margin-bottom:10px;
+}
+.submit{
+    background-color: #D1512D;
+    color: white;
+    padding: 8px 50px 8px 50px;
+}
+.table{
+    background-color: white;
+}
+.visit{
+    background-color:#8A9E23;
+    color: white;
+}
+.delete{
+    background-color:#D30820;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+@media screen and (max-width:992px){
+    h2{
+        font-size: 20px;
+    }
+}
